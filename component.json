@@ -1,0 +1,14 @@
+{
+  "name": "color-component",
+  "repo": "whirlibulf/color-component",
+  "description": "A component for storing color values in the whirlibulf game engine",
+  "version": "0.0.1",
+  "keywords": ["whirlibulf", "component"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
