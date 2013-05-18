@@ -11,7 +11,7 @@ Component for storing color values in game objects in the whirlibulf game engine
 
 Register the component:
 
-    game.addComponent('color', require('color-component'));
+    game.use('color', require('color-component'));
 
 The options object for this component is a map from a string key to a string color value.
 
