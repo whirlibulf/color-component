@@ -1,14 +1,17 @@
 function ComponentFactory(options) {
-  var component = {},
-    key;
+    var key;
 
-  for (key in options) {
-    if (options.hasOwnProperty(key)) {
-      component[key] = options[key];
+    for (key in this) {
+        if (this.hasOwnProperty(key)) {
+            delete this[key];
+        }
     }
-  }
 
-  return component;
+    for (key in options) {
+        if (options.hasOwnProperty(key)) {
+            this[key] = options[key];
+        }
+    }
 }
 
 module.exports = ComponentFactory;
